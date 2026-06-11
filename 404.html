@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA fallback: redirect unknown paths to index with encoded route.
+      // Custom domain deploy at root: do not preserve any path segment.
+      // Preserving one segment causes recursive redirects like /about/?/about...,
+      // which keeps re-encoding query separators into ~and~.
+      var pathSegmentsToKeep = 0;
+      var locationData = window.location;
+      var basePath = locationData.pathname
+        .split('/')
+        .slice(0, 1 + pathSegmentsToKeep)
+        .join('/');
+      var routePath = locationData.pathname
+        .slice(1)
+        .split('/')
+        .slice(pathSegmentsToKeep)
+        .join('/')
+        .replace(/&/g, '~and~');
+      var search = locationData.search
+        ? '&' + locationData.search.slice(1).replace(/&/g, '~and~')
+        : '';
+
+      locationData.replace(
+        locationData.protocol +
+          '//' +
+          locationData.hostname +
+          (locationData.port ? ':' + locationData.port : '') +
+          basePath +
+          '/?/' +
+          routePath +
+          search +
+          locationData.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
