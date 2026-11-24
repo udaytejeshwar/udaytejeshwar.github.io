@@ -1,0 +1,6 @@
+import{c as t,d as s,j as e,L as o,f as a}from"./index-CkGEKNXV.js";/**
+ * @license lucide-react v0.344.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const n=t("Home",[["path",{d:"m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"y5dka4"}],["polyline",{points:"9 22 9 12 15 12 15 22",key:"e2us08"}]]),c=()=>(s({...a.notFound,noIndex:!0}),e.jsx("div",{className:"flex items-center justify-center min-h-[calc(100vh-16rem)] bg-gray-50",children:e.jsxs("div",{className:"text-center px-4 py-16",children:[e.jsx("h1",{className:"text-6xl font-bold text-primary-500 mb-4",children:"404"}),e.jsx("h2",{className:"text-2xl font-semibold text-gray-900 mb-2",children:"Page Not Found"}),e.jsx("p",{className:"text-gray-600 mb-8",children:"The page you are looking for doesn't exist or has been moved."}),e.jsxs(o,{to:"/",className:"inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-primary-500 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-blue-500",children:[e.jsx(n,{className:"mr-2 h-5 w-5"}),"Back to Home"]})]})}));export{c as default};
